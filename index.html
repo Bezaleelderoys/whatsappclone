@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <title>WhatsApp</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss"></style>
     <script>
@@ -27,9 +32,53 @@
   <body class="bg-slate-200 font-inter">
     <div class="w-full bg-emerald-700 h-28 shadow-md fixed"></div>
     <div class="container m-auto relative pt-8">
-      <div class="bg-white shadow-md h-[36rem] mx-16 flex">
-        <div class="w-1/3 bg-slate-300"></div>
+      <div
+        class="bg-white shadow-md h-[36rem] mx-16 flex overflow-hidden relative"
+      >
+        <div class="w-1/3 bg-slate-300 border-r-slate-500">
+          <section class="w-full h-28 bg-slate-200">
+            <div class="w-full h-1/2 flex py-2 px-5 justify-between">
+              <img
+                class="rounded-[50%] cursor-pointer hover:focus:ring-slate-500 hover:border-slate-500"
+                src="img/2.jpg"
+                alt=""
+              />
+              <i
+                class="bi bi-three-dots-vertical self-center cursor-pointer opacity-70 hover:opacity-100"
+                id="button"
+              ></i>
+              <div
+                class="w-24 h-36 bg-white absolute border shadow items-center left-72 top-[3rem] invisible"
+                id="dropdown"
+              >
+                <a href="login.html" class="text-center">Logout</a>
+              </div>
+            </div>
+            <div class="w-full h-1/2 bg-slate-100 shadow py-3 px-5">
+              <form>
+                <input
+                  class="w-full h-8 p-3 shadow focus:ring-slate-200 hover:border-slate-200 outline-none"
+                  type="text"
+                  placeholder="Search.."
+                />
+              </form>
+            </div>
+          </section>
+          <section class="w-full h-full bg-white">
+            <div
+              class="w-full h-16 bg-white border-b-2 flex cursor-pointer hover:bg-slate-100"
+            >
+              <img src="img/2.jpg" />
+              <div>
+                <h1>Bezaleel <span>11:00 PM</span></h1>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="w-2/3 bg-slate-100"></div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
