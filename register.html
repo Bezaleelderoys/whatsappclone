@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss"></style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ["Inter"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-slate-200 font-inter">
+    <div class="w-full bg-emerald-700 h-28 shadow-md fixed"></div>
+    <div class="container m-auto relative pt-8">
+      <div class="bg-white shadow-md h-[36rem] p-10 mx-16 flex">
+        <section class="w-1/2 h-full border-r-2 p-8">
+          <h1 class="text-2xl font-thin mb-2">
+            Welcome to <span class="tracking-wide">WhatsApp</span> Messenger
+          </h1>
+          <div class="w-full h-1/2 bg-slate-500">
+            <video class="w-fit h-fit" autoplay>
+              <source
+                src="media/y2mate.is - Introducing WhatsApp Channels-Fwk7bPOUHM4-360p-1701515892.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </section>
+        <!-- separate -->
+        <section class="w-1/2 h-full p-9">
+          <h1 class="text-3xl text-center font-thin tracking-wider mb-6">
+            Register
+          </h1>
+          <form action="">
+            <label for="login">
+              <span
+                class="w-full text-slate-700 after:content-['*'] after:text-pink-500 after:ml-1"
+                >Email</span
+              ><br />
+              <input
+                type="email"
+                class="px-3 py-2 mb-3 border shadow w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-lime-300 focus:border-lime-300 invalid:text-pink-700 invalid:focus:ring-pink-700 invalid:focus:border-pink-700 peer"
+                placeholder="Email.."
+              />
+              <p class="mb-3 text-pink-700 invisible peer-invalid:visible">
+                Email is invalid
+              </p>
+              <span
+                class="w-full text-slate-700 after:content-['*'] after:text-pink-500 after:ml-1"
+                >Username</span
+              ><br />
+              <input
+                type="text"
+                class="px-3 py-2 mb-3 border shadow w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-lime-300 focus:border-lime-300 invalid:text-pink-700 invalid:focus:ring-pink-700 invalid:focus:border-pink-700 peer"
+                placeholder="Username.."
+              />
+              <span
+                class="w-full text-slate-700 after:content-['*'] after:text-pink-700 after:ml-1"
+                >Password</span
+              >
+              <input
+                type="password"
+                class="mb-3 px-3 py-2 border shadow w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-lime-300 focus:border-lime-300"
+                placeholder="Password.."
+              />
+              <span class="font-thin"
+                >Already have an account?
+                <a
+                  href="login.html"
+                  class="text-blue-400 underline hover:text-blue-600 active:text-blue-700"
+                  >Login here</a
+                ></span
+              >
+              <input
+                class="w-full my-4 bg-emerald-700 cursor-pointer h-10 border shadow hover:bg-emerald-800 focus:ring-emerald-800 active:bg-emerald-900 text-white"
+                type="submit"
+                value="Register"
+              />
+            </label>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
